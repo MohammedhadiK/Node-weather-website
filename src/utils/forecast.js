@@ -19,7 +19,7 @@ const forecast = (latitude,longitude, callback) => {
                 const  windDir= body.current.wind_dir
                 const Vis = body.current.visibility
                 const data = {
-                    string : description + '. The temperature is ' + temperature + 'ºC. It feel like ' + feelslike + 'ºC. The windspeed is ' + windSpeed + ' m/s in the ' + windDir + ' direction. The visibility is ' + Vis +' Km.'  
+                    string : description + '. The temperature is ' + temperature + 'ºC. It feel like ' + feelslike + 'ºC. The windspeed is ' + windSpeed + ' m/s in the ' + windDir + ' direction. The visibility is ' + Vis +' km.'  
                 }
                 callback(undefined, data.string)
             }
