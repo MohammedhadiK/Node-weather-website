@@ -43,18 +43,18 @@ app.get('/help',(req,res) =>{
     })
 })
 
-app.get('/products',(req,res) =>{
-    if (!req.query.search){
-        return res.send({
-            error: 'You must provide a item for search.'
-        })
-    }
+// app.get('/products',(req,res) =>{
+//     if (!req.query.search){
+//         return res.send({
+//             error: 'You must provide a item for search.'
+//         })
+//     }
 
-    console.log(req.query.u)
-    res.send({
-        products:[]
-    })
-})
+//     console.log(req.query.u)
+//     res.send({
+//         products:[]
+//     })
+// })
 
 app.get('/weather', (req,res) => {
     if(!req.query.address){
